@@ -19,7 +19,6 @@ body {
     text-decoration: none;
     font-weight: 500;
     padding: 8px 12px;
-    transition: 0.3s;
 }
 
 .navbar a:hover {
@@ -40,7 +39,6 @@ body {
 /* HEADINGS */
 h1 {
     color: #2c3e50;
-    margin-bottom: 10px;
 }
 
 h2 {
@@ -56,20 +54,6 @@ p {
     color: #333;
 }
 
-/* LIST */
-ul {
-    padding-left: 20px;
-}
-
 ul li {
     margin-bottom: 8px;
-}
-
-/* LINKS */
-a {
-    color: #2980b9;
-}
-
-a:hover {
-    text-decoration: underline;
 }
