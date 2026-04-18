@@ -1,3 +1,4 @@
+/* GENERAL */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     margin: 0;
@@ -11,6 +12,7 @@ body {
     text-align: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar a {
@@ -19,6 +21,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     padding: 8px 12px;
+    transition: 0.3s;
 }
 
 .navbar a:hover {
@@ -26,7 +29,7 @@ body {
     border-radius: 5px;
 }
 
-/* CONTAINER */
+/* MAIN CONTAINER */
 .container {
     padding: 40px;
     max-width: 900px;
@@ -39,6 +42,7 @@ body {
 /* HEADINGS */
 h1 {
     color: #2c3e50;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -54,6 +58,40 @@ p {
     color: #333;
 }
 
+/* LISTS */
+ul {
+    padding-left: 20px;
+}
+
 ul li {
     margin-bottom: 8px;
+}
+
+/* LINKS */
+a {
+    color: #2980b9;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* PROFILE IMAGE */
+img {
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
 }
