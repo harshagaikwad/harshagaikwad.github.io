@@ -56,117 +56,74 @@
   </div>
 </section>
 
-<section class="section tint" style="padding-bottom: 24px">
+<section class="section" style="padding-top: 8px">
   <div class="wrap">
-    <h2 style="margin-bottom: 36px">Research projects</h2>
-
-    <article class="project" id="marathi-llm">
-      <aside class="meta">
-        <div><h4>Area</h4><p>Natural Language Processing</p></div>
-        <div><h4>Methods and tools</h4><ul class="pill-list"><li>LLM fine-tuning</li><li>Marathi language</li><li>Task-specific datasets</li></ul></div>
-      </aside>
-      <div class="body">
-        <h3>Adapting LLM for Regional Language Processing</h3>
-        <h4>Objective</h4>
-        <p>To adapt Large Language Models (LLMs) through fine-tuning on task-specific and language-specific datasets, enhancing their ability to handle cultural context, linguistic diversity, and domain-specific nuances of the Marathi language.</p>
-        <h4>How it works</h4>
-        <ol class="flow"><li>Build datasets for three Marathi language tasks.</li><li>Fine-tune the base LLM on each dataset to create a specialized model for the task.</li><li>Compare every specialized model with the base model on quantitative metrics and on fluency, relevance, and correctness.</li></ol>
-        <h4>Outcome</h4>
-        <p>Developed datasets for three tasks and three specialized models: <strong>Marathi_Para</strong>, <strong>Marathi_Class</strong>, and <strong>Marathi_Senti</strong>. They significantly outperformed the base model in both quantitative metrics and qualitative measures such as fluency, relevance, and correctness.</p>
+    <h2 style="margin-bottom: 16px">Research projects</h2>
+    <div class="proj-list">
+    <details class="proj" id="marathi-llm" open>
+      <summary><span class="t">Adapting LLM for Regional Language Processing</span><span class="a">Natural Language Processing</span></summary>
+      <div class="pbody">
+        <p><strong>Objective.</strong> To adapt Large Language Models (LLMs) through fine-tuning on task-specific and language-specific datasets, enhancing their ability to handle cultural context, linguistic diversity, and domain-specific nuances of the Marathi language.</p>
+        <p><strong>Outcome.</strong> Developed datasets for three tasks and three specialized models: <strong>Marathi_Para</strong>, <strong>Marathi_Class</strong>, and <strong>Marathi_Senti</strong>. They significantly outperformed the base model in both quantitative metrics and qualitative measures such as fluency, relevance, and correctness.</p>
         <ul class="results"><li>90% accuracy for classification</li><li>70% accuracy for sentiment</li></ul>
+        <ul class="pill-list"><li>LLM fine-tuning</li><li>Marathi language</li><li>Task-specific datasets</li></ul>
       </div>
-    </article>
-    <article class="project" id="question-paper">
-      <aside class="meta">
-        <div><h4>Area</h4><p>Educational technology</p></div>
-        <div><h4>Methods and tools</h4><ul class="pill-list"><li>Retrieval-Augmented Generation (RAG)</li><li>Large Language Models</li><li>Bloom’s Taxonomy</li></ul></div>
-      </aside>
-      <div class="body">
-        <h3>Adapting LLM for Question Paper Generation</h3>
-        <h4>Objective</h4>
-        <p>To utilize Retrieval-Augmented Generation (RAG) to integrate LLMs with external academic course materials, ensuring that generated question papers are contextually relevant, syllabus-aligned, and pedagogically sound according to Bloom’s Taxonomy.</p>
-        <h4>How it works</h4>
-        <ol class="flow"><li>Provide the LLM with external academic course materials through retrieval.</li><li>Generate questions grounded in the retrieved syllabus content and aligned to Bloom’s Taxonomy.</li><li>Assemble the questions into structured, diverse, and ready-to-use examination papers.</li></ol>
-        <h4>Outcome</h4>
-        <p>Developed an AI-based system that demonstrated higher alignment with course objectives and improved syllabus coverage compared to generic models, producing structured, diverse, and ready-to-use examination papers.</p>
+    </details>
+    <details class="proj" id="question-paper">
+      <summary><span class="t">Adapting LLM for Question Paper Generation</span><span class="a">Educational technology</span></summary>
+      <div class="pbody">
+        <p><strong>Objective.</strong> To utilize Retrieval-Augmented Generation (RAG) to integrate LLMs with external academic course materials, ensuring that generated question papers are contextually relevant, syllabus-aligned, and pedagogically sound according to Bloom’s Taxonomy.</p>
+        <p><strong>Outcome.</strong> Developed an AI-based system that demonstrated higher alignment with course objectives and improved syllabus coverage compared to generic models, producing structured, diverse, and ready-to-use examination papers.</p>
+        
+        <ul class="pill-list"><li>Retrieval-Augmented Generation (RAG)</li><li>Large Language Models</li><li>Bloom’s Taxonomy</li></ul>
       </div>
-    </article>
-    <article class="project" id="assessment">
-      <aside class="meta">
-        <div><h4>Area</h4><p>Educational technology</p></div>
-        <div><h4>Methods and tools</h4><ul class="pill-list"><li>OpenAI ADA-002 embeddings</li><li>Cosine similarity</li><li>Automated grading</li></ul></div>
-      </aside>
-      <div class="body">
-        <h3>Adapting LLM for Student Assessment Evaluation</h3>
-        <h4>Objective</h4>
-        <p>To adapt LLM embeddings (specifically OpenAI ADA-002) and cosine similarity to create semantic representations of student answers and compare them with model answers for fair, transparent, and scalable automated grading.</p>
-        <h4>How it works</h4>
-        <ol class="flow"><li>Convert each student answer and the model answer into ADA-002 embeddings.</li><li>Measure how close the two are in meaning using cosine similarity.</li><li>Convert the similarity into marks for descriptive answers.</li><li>Validate the marks against subject-expert grading using Root Mean Square Error (RMSE).</li></ol>
-        <h4>Outcome</h4>
-        <p>Developed a system that evaluates descriptive answers with high accuracy, closely matching subject-expert grading with low Root Mean Square Error (RMSE), while reducing bias and human error in the evaluation process.</p>
+    </details>
+    <details class="proj" id="assessment">
+      <summary><span class="t">Adapting LLM for Student Assessment Evaluation</span><span class="a">Educational technology</span></summary>
+      <div class="pbody">
+        <p><strong>Objective.</strong> To adapt LLM embeddings (specifically OpenAI ADA-002) and cosine similarity to create semantic representations of student answers and compare them with model answers for fair, transparent, and scalable automated grading.</p>
+        <p><strong>Outcome.</strong> Developed a system that evaluates descriptive answers with high accuracy, closely matching subject-expert grading with low Root Mean Square Error (RMSE), while reducing bias and human error in the evaluation process.</p>
+        
+        <ul class="pill-list"><li>OpenAI ADA-002 embeddings</li><li>Cosine similarity</li><li>Automated grading</li></ul>
       </div>
-    </article>
-    <article class="project" id="student-support">
-      <aside class="meta">
-        <div><h4>Area</h4><p>Educational technology</p></div>
-        <div><h4>Methods and tools</h4><ul class="pill-list"><li>Gemini 1.5 Pro</li><li>Retrieval-Augmented Generation (RAG)</li><li>University knowledge base</li><li>Multilingual chatbot</li></ul></div>
-      </aside>
-      <div class="body">
-        <h3>Adapting LLM for Student Support System</h3>
-        <h4>Objective</h4>
-        <p>To enhance LLM capabilities (using Gemini 1.5 Pro) by integrating Retrieval-Augmented Generation (RAG) with a university-specific knowledge base to provide precise, context-aware, and multilingual administrative support.</p>
-        <h4>How it works</h4>
-        <ol class="flow"><li>Build a knowledge base from authenticated university documents.</li><li>Retrieve the passages relevant to each student query.</li><li>Let Gemini 1.5 Pro answer from the retrieved text, in the student’s language.</li><li>Compare answers with generic models for accuracy, relevance, and hallucination.</li></ol>
-        <h4>Outcome</h4>
-        <p>Developed an advanced chatbot that outperformed generic models in accuracy and relevance, significantly reducing hallucinations by retrieving information directly from authenticated university documents.</p>
+    </details>
+    <details class="proj" id="student-support">
+      <summary><span class="t">Adapting LLM for Student Support System</span><span class="a">Educational technology</span></summary>
+      <div class="pbody">
+        <p><strong>Objective.</strong> To enhance LLM capabilities (using Gemini 1.5 Pro) by integrating Retrieval-Augmented Generation (RAG) with a university-specific knowledge base to provide precise, context-aware, and multilingual administrative support.</p>
+        <p><strong>Outcome.</strong> Developed an advanced chatbot that outperformed generic models in accuracy and relevance, significantly reducing hallucinations by retrieving information directly from authenticated university documents.</p>
+        
+        <ul class="pill-list"><li>Gemini 1.5 Pro</li><li>Retrieval-Augmented Generation (RAG)</li><li>University knowledge base</li><li>Multilingual chatbot</li></ul>
       </div>
-    </article>
-    <article class="project" id="eeg-yoga">
-      <aside class="meta">
-        <div><h4>Area</h4><p>Neurophysiological signals and machine learning</p></div>
-        <div><h4>Methods and tools</h4><ul class="pill-list"><li>EEG signals</li><li>Machine learning (KNN, SVM)</li><li>Deep learning</li><li>Adaptive ICA</li></ul></div>
-      </aside>
-      <div class="body">
-        <h3>EEG-Based Analysis of Learning and Yoga-Induced Stress Reduction</h3>
-        <h4>Objective</h4>
-        <p>To use brain signals recorded with Electroencephalography (EEG) to understand how students learn, from their level of understanding and concentration to the effect of yoga and meditation on stress.</p>
-        <h4>How it works</h4>
-        <ol class="flow"><li>Record EEG signals from participants during learning and cognitive activities.</li><li>Train machine learning and deep learning models to predict understanding and concentration.</li><li>Review the EEG literature on yoga and meditation, then design a standardized system that quantifies cumulative stress reduction using adaptive Independent Component Analysis (ICA).</li></ol>
-        <h4>Outcome</h4>
-        <p>A study on students of different ages and educational backgrounds found that KNN and SVM predicted the level of understanding with nearly identical accuracy. The work was extended to concentration prediction with deep learning.</p>
+    </details>
+    <details class="proj" id="eeg-yoga">
+      <summary><span class="t">EEG-Based Analysis of Learning and Yoga-Induced Stress Reduction</span><span class="a">Neurophysiological signals and machine learning</span></summary>
+      <div class="pbody">
+        <p><strong>Objective.</strong> To use brain signals recorded with Electroencephalography (EEG) to understand how students learn, from their level of understanding and concentration to the effect of yoga and meditation on stress.</p>
+        <p><strong>Outcome.</strong> A study on students of different ages and educational backgrounds found that KNN and SVM predicted the level of understanding with nearly identical accuracy. The work was extended to concentration prediction with deep learning.</p>
         <ul class="results"><li>About 99% accuracy with KNN and SVM</li></ul>
+        <ul class="pill-list"><li>EEG signals</li><li>Machine learning (KNN, SVM)</li><li>Deep learning</li><li>Adaptive ICA</li></ul>
       </div>
-    </article>
-    <article class="project" id="quantum">
-      <aside class="meta">
-        <div><h4>Area</h4><p>Quantum computing</p></div>
-        <div><h4>Methods and tools</h4><ul class="pill-list"><li>Qiskit</li><li>IBM Quantum</li><li>Software architecture</li><li>Hybrid quantum-classical systems</li></ul></div>
-      </aside>
-      <div class="body">
-        <h3>Quantum Computing and Hybrid Quantum-Classical Software</h3>
-        <h4>Objective</h4>
-        <p>To learn, teach, and build for quantum computing, including how to design software that combines quantum and classical components in one system.</p>
-        <h4>How it works</h4>
-        <ol class="flow"><li>Study the foundations of quantum computing and work hands-on with Qiskit.</li><li>Define the components a hybrid quantum-classical system needs.</li><li>Organize them into a framework that guides how such systems are designed.</li></ol>
-        <h4>Outcome</h4>
-        <p>Proposed the Quantum Software Architecture Framework (QSAF), a component-based framework for designing hybrid quantum-classical systems.</p>
+    </details>
+    <details class="proj" id="quantum">
+      <summary><span class="t">Quantum Computing and Hybrid Quantum-Classical Software</span><span class="a">Quantum computing</span></summary>
+      <div class="pbody">
+        <p><strong>Objective.</strong> To learn, teach, and build for quantum computing, including how to design software that combines quantum and classical components in one system.</p>
+        <p><strong>Outcome.</strong> Proposed the Quantum Software Architecture Framework (QSAF), a component-based framework for designing hybrid quantum-classical systems.</p>
+        
+        <ul class="pill-list"><li>Qiskit</li><li>IBM Quantum</li><li>Software architecture</li><li>Hybrid quantum-classical systems</li></ul>
       </div>
-    </article>
-    <article class="project" id="applied-ml">
-      <aside class="meta">
-        <div><h4>Area</h4><p>Applied machine learning</p></div>
-        <div><h4>Methods and tools</h4><ul class="pill-list"><li>Machine learning</li><li>Deep learning</li><li>Comparative analysis</li></ul></div>
-      </aside>
-      <div class="body">
-        <h3>Applied Machine Learning for Agriculture and Healthcare</h3>
-        <h4>Objective</h4>
-        <p>To apply machine learning to practical problems in society, such as predicting suitable crops for farmers and detecting COVID-19.</p>
-        <h4>How it works</h4>
-        <ol class="flow"><li>Compare several machine learning models on the same problem.</li><li>Select the model that performs best for the task.</li></ol>
-        <h4>Outcome</h4>
-        <p>A comparative performance analysis of machine learning models for agricultural crop prediction, and a study of deep learning techniques for detecting COVID-19.</p>
+    </details>
+    <details class="proj" id="applied-ml">
+      <summary><span class="t">Applied Machine Learning for Agriculture and Healthcare</span><span class="a">Applied machine learning</span></summary>
+      <div class="pbody">
+        <p><strong>Objective.</strong> To apply machine learning to practical problems in society, such as predicting suitable crops for farmers and detecting COVID-19.</p>
+        <p><strong>Outcome.</strong> A comparative performance analysis of machine learning models for agricultural crop prediction, and a study of deep learning techniques for detecting COVID-19.</p>
+        
+        <ul class="pill-list"><li>Machine learning</li><li>Deep learning</li><li>Comparative analysis</li></ul>
       </div>
-    </article>
+    </details>
+    </div>
   </div>
 </section>
 
