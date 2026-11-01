@@ -1,140 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research | Harsha R. Gaikwad</title>
-  <meta name="description" content="Research projects of Harsha R. Gaikwad: LLMs for Marathi, RAG for education, automated assessment, EEG and yoga, and quantum computing.">
-  <meta property="og:title" content="Research | Harsha R. Gaikwad">
-  <meta property="og:description" content="Research projects of Harsha R. Gaikwad: LLMs for Marathi, RAG for education, automated assessment, EEG and yoga, and quantum computing.">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2300383b'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='white' font-family='Georgia,serif'%3EHG%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Harsha R. Gaikwad</title>
+<meta name="description" content="Research projects: adapting large language models for Marathi, question paper generation, student assessment and student support.">
+<meta name="theme-color" content="#00383B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2300383B'/%3E%3Cpath d='M9 24V8h3v5h8V8h3v16h-3v-8h-8v8z' fill='%23F2B33D'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
-  <div class="wrap">
+  <div class="header-inner">
     <a class="brand" href="index.html">Harsha R. Gaikwad</a>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav class="nav" id="site-nav" aria-label="Main">
-      <a href="index.html">Home</a>
-      <a href="research.html" aria-current="page">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="patents.html">Patents</a>
-      <a href="teaching.html">Teaching & Experience</a>
-      <a href="Activities.html">Activities</a>
-      <a href="badges.html">Badges</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-icon" aria-hidden="true"></span><span>Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" aria-current="page">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="patents.html">Patents</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="Activities.html">Experience &amp; Activities</a></li>
+        <li><a href="badges.html">Badges</a></li>
+      </ul>
     </nav>
   </div>
 </header>
 
 <main id="main">
-<section class="page-head">
-  <div class="wrap">
+<section class="page-band">
+  <div class="page-band-inner">
     <h1>Research</h1>
-    <p>Applying Artificial Intelligence and Machine Learning to real-world problems in education, healthcare, and societal development.</p>
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap split">
-    <h2>Research profile</h2>
-    <div class="prose">
-      <p>My research objective is to apply Artificial Intelligence and Machine Learning techniques to solve real-world problems in education,
+<div class="page">
+  <section class="page-section" aria-labelledby="profile-heading">
+    <h2 id="profile-heading">Research Profile</h2>
+    <p class="lead">
+      My research objective is to apply Artificial Intelligence and Machine Learning techniques to solve real-world problems in education,
       healthcare, and societal development. My areas of interest include Artificial Intelligence, Natural Language Processing,
-      Machine Learning, Large Language Models, and Quantum Computing.</p>
-      <ul class="interest-list">
-        <li>Artificial Intelligence</li><li>Natural Language Processing</li><li>Machine Learning</li>
-        <li>Large Language Models</li><li>Quantum Computing</li>
-      </ul>
-    </div>
-  </div>
-</section>
+      Machine Learning, Large Language Models, and Quantum Computing.
+    </p>
+  </section>
 
-<section class="section" style="padding-top: 8px">
-  <div class="wrap">
-    <h2 style="margin-bottom: 16px">Research projects</h2>
-    <div class="proj-list">
-    <details class="proj" id="marathi-llm" open>
-      <summary><span class="t">Adapting LLM for Regional Language Processing</span><span class="a">Natural Language Processing</span></summary>
-      <div class="pbody">
-        <p><strong>Objective.</strong> To adapt Large Language Models (LLMs) through fine-tuning on task-specific and language-specific datasets, enhancing their ability to handle cultural context, linguistic diversity, and domain-specific nuances of the Marathi language.</p>
-        <p><strong>Outcome.</strong> Developed datasets for three tasks and three specialized models: <strong>Marathi_Para</strong>, <strong>Marathi_Class</strong>, and <strong>Marathi_Senti</strong>. They significantly outperformed the base model in both quantitative metrics and qualitative measures such as fluency, relevance, and correctness.</p>
-        <ul class="results"><li>90% accuracy for classification</li><li>70% accuracy for sentiment</li></ul>
-        <ul class="pill-list"><li>LLM fine-tuning</li><li>Marathi language</li><li>Task-specific datasets</li></ul>
-      </div>
-    </details>
-    <details class="proj" id="question-paper">
-      <summary><span class="t">Adapting LLM for Question Paper Generation</span><span class="a">Educational technology</span></summary>
-      <div class="pbody">
-        <p><strong>Objective.</strong> To utilize Retrieval-Augmented Generation (RAG) to integrate LLMs with external academic course materials, ensuring that generated question papers are contextually relevant, syllabus-aligned, and pedagogically sound according to Bloom’s Taxonomy.</p>
-        <p><strong>Outcome.</strong> Developed an AI-based system that demonstrated higher alignment with course objectives and improved syllabus coverage compared to generic models, producing structured, diverse, and ready-to-use examination papers.</p>
-        
-        <ul class="pill-list"><li>Retrieval-Augmented Generation (RAG)</li><li>Large Language Models</li><li>Bloom’s Taxonomy</li></ul>
-      </div>
-    </details>
-    <details class="proj" id="assessment">
-      <summary><span class="t">Adapting LLM for Student Assessment Evaluation</span><span class="a">Educational technology</span></summary>
-      <div class="pbody">
-        <p><strong>Objective.</strong> To adapt LLM embeddings (specifically OpenAI ADA-002) and cosine similarity to create semantic representations of student answers and compare them with model answers for fair, transparent, and scalable automated grading.</p>
-        <p><strong>Outcome.</strong> Developed a system that evaluates descriptive answers with high accuracy, closely matching subject-expert grading with low Root Mean Square Error (RMSE), while reducing bias and human error in the evaluation process.</p>
-        
-        <ul class="pill-list"><li>OpenAI ADA-002 embeddings</li><li>Cosine similarity</li><li>Automated grading</li></ul>
-      </div>
-    </details>
-    <details class="proj" id="student-support">
-      <summary><span class="t">Adapting LLM for Student Support System</span><span class="a">Educational technology</span></summary>
-      <div class="pbody">
-        <p><strong>Objective.</strong> To enhance LLM capabilities (using Gemini 1.5 Pro) by integrating Retrieval-Augmented Generation (RAG) with a university-specific knowledge base to provide precise, context-aware, and multilingual administrative support.</p>
-        <p><strong>Outcome.</strong> Developed an advanced chatbot that outperformed generic models in accuracy and relevance, significantly reducing hallucinations by retrieving information directly from authenticated university documents.</p>
-        
-        <ul class="pill-list"><li>Gemini 1.5 Pro</li><li>Retrieval-Augmented Generation (RAG)</li><li>University knowledge base</li><li>Multilingual chatbot</li></ul>
-      </div>
-    </details>
-    <details class="proj" id="eeg-yoga">
-      <summary><span class="t">EEG-Based Analysis of Learning and Yoga-Induced Stress Reduction</span><span class="a">Neurophysiological signals and machine learning</span></summary>
-      <div class="pbody">
-        <p><strong>Objective.</strong> To use brain signals recorded with Electroencephalography (EEG) to understand how students learn, from their level of understanding and concentration to the effect of yoga and meditation on stress.</p>
-        <p><strong>Outcome.</strong> A study on students of different ages and educational backgrounds found that KNN and SVM predicted the level of understanding with nearly identical accuracy. The work was extended to concentration prediction with deep learning.</p>
-        <ul class="results"><li>About 99% accuracy with KNN and SVM</li></ul>
-        <ul class="pill-list"><li>EEG signals</li><li>Machine learning (KNN, SVM)</li><li>Deep learning</li><li>Adaptive ICA</li></ul>
-      </div>
-    </details>
-    <details class="proj" id="quantum">
-      <summary><span class="t">Quantum Computing and Hybrid Quantum-Classical Software</span><span class="a">Quantum computing</span></summary>
-      <div class="pbody">
-        <p><strong>Objective.</strong> To learn, teach, and build for quantum computing, including how to design software that combines quantum and classical components in one system.</p>
-        <p><strong>Outcome.</strong> Proposed the Quantum Software Architecture Framework (QSAF), a component-based framework for designing hybrid quantum-classical systems.</p>
-        
-        <ul class="pill-list"><li>Qiskit</li><li>IBM Quantum</li><li>Software architecture</li><li>Hybrid quantum-classical systems</li></ul>
-      </div>
-    </details>
-    <details class="proj" id="applied-ml">
-      <summary><span class="t">Applied Machine Learning for Agriculture and Healthcare</span><span class="a">Applied machine learning</span></summary>
-      <div class="pbody">
-        <p><strong>Objective.</strong> To apply machine learning to practical problems in society, such as predicting suitable crops for farmers and detecting COVID-19.</p>
-        <p><strong>Outcome.</strong> A comparative performance analysis of machine learning models for agricultural crop prediction, and a study of deep learning techniques for detecting COVID-19.</p>
-        
-        <ul class="pill-list"><li>Machine learning</li><li>Deep learning</li><li>Comparative analysis</li></ul>
-      </div>
-    </details>
-    </div>
-  </div>
-</section>
-
+  <section class="page-section" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Research Projects</h2>
+    <div class="table-wrap">
+  <table class="data stack">
+    <caption class="sr-only">Research projects</caption>
+    <thead><tr><th scope="col" class="num">Sr. No.</th><th scope="col">Project</th><th scope="col">Objective</th><th scope="col">Outcome</th></tr></thead>
+    <tbody>
+      <tr><td class="num" data-label="Sr. No.">1</td><td data-label="Project"><span class="cell-title">Adapting LLM for Regional Language Processing</span><span class="sub">LLM fine-tuning, Marathi language</span></td><td data-label="Objective">To adapt Large Language Models (LLMs) through fine-tuning on task-specific and language-specific datasets, enhancing their ability to handle cultural context, linguistic diversity, and domain-specific nuances of the Marathi language.</td><td data-label="Outcome">Developed datasets for three tasks and three specialized models: <strong>Marathi_Para</strong>, <strong>Marathi_Class</strong>, and <strong>Marathi_Senti</strong>. They significantly outperformed the base model in both quantitative metrics and qualitative measures such as fluency, relevance, and correctness. The models reached 90% accuracy in classification and 70% in sentiment analysis.</td></tr>
+      <tr><td class="num" data-label="Sr. No.">2</td><td data-label="Project"><span class="cell-title">Adapting LLM for Question Paper Generation</span><span class="sub">Retrieval-Augmented Generation (RAG), Bloom&rsquo;s Taxonomy</span></td><td data-label="Objective">To utilize Retrieval-Augmented Generation (RAG) to integrate LLMs with external academic course materials, ensuring that generated question papers are contextually relevant, syllabus-aligned, and pedagogically sound according to Bloom&rsquo;s Taxonomy.</td><td data-label="Outcome">Developed an AI-based system that demonstrated higher alignment with course objectives and improved syllabus coverage compared to generic models, producing structured, diverse, and ready-to-use examination papers.</td></tr>
+      <tr><td class="num" data-label="Sr. No.">3</td><td data-label="Project"><span class="cell-title">Adapting LLM for Student Assessment Evaluation</span><span class="sub">OpenAI ADA-002 embeddings, cosine similarity</span></td><td data-label="Objective">To adapt LLM embeddings (specifically OpenAI ADA-002) and cosine similarity to create semantic representations of student answers and compare them with model answers for fair, transparent, and scalable automated grading.</td><td data-label="Outcome">Developed a system that evaluates descriptive answers with high accuracy, closely matching subject-expert grading with low Root Mean Square Error (RMSE), while reducing bias and human error in the evaluation process.</td></tr>
+      <tr><td class="num" data-label="Sr. No.">4</td><td data-label="Project"><span class="cell-title">Adapting LLM for Student Support System</span><span class="sub">Gemini 1.5 Pro, Retrieval-Augmented Generation (RAG)</span></td><td data-label="Objective">To enhance LLM capabilities (using Gemini 1.5 Pro) by integrating Retrieval-Augmented Generation (RAG) with a university-specific knowledge base to provide precise, context-aware, and multilingual administrative support.</td><td data-label="Outcome">Developed an advanced chatbot that outperformed generic models in accuracy and relevance, significantly reducing hallucinations by retrieving information directly from authenticated university documents.</td></tr>
+    </tbody>
+  </table>
+</div>
+  </section>
+</div>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap foot">
-    <span>Harsha Ramchandra Gaikwad, Assistant Professor, DBATU, Lonere</span>
-    <span>&copy; 2026</span>
+  <div class="footer-inner">
+    <p class="footer-name">Harsha Ramchandra Gaikwad</p>
+    <p>Department of Computer Engineering, Dr. Babasaheb Ambedkar Technological University, Lonere - 402 103, Raigad, India</p>
+    <p><a href="mailto:harsha.gaikwad@dbatu.ac.in">harsha.gaikwad@dbatu.ac.in</a></p>
   </div>
 </footer>
-<script src="script.js"></script>
+
+<script src="site.js"></script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+Fonts in this folder are self-hosted for this website.
+
+Newsreader  - Copyright 2020 The Newsreader Project Authors (https://github.com/productiontype/Newsreader)
+Public Sans - Copyright 2015 The Public Sans Project Authors (https://github.com/uswds/public-sans)
+
+Both are licensed under the SIL Open Font License, Version 1.1.
+Full text and FAQ: https://openfontlicense.org
