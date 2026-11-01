@@ -1016,3 +1016,48 @@ h2 {
     .stats.five { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .stats.five .stat:nth-child(5) { border-left: 0; }
 }
+
+/* badges: compact clickable list */
+.badge-list { margin: 0; padding: 0; list-style: none; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.badge-list li + li { border-top: 1px solid var(--line-soft); }
+.badge-list a { display: flex; align-items: center; gap: 14px; padding: 9px 16px; color: var(--ink); text-decoration: none; }
+.badge-list a:hover { background: #F6FAF9; }
+.badge-list img { flex: none; width: 40px; height: 40px; border-radius: 3px; }
+.badge-list .name { flex: 1; min-width: 0; font-weight: 600; color: var(--navy); }
+.badge-list a:hover .name { color: var(--link); text-decoration: underline; }
+.badge-list .date { flex: none; color: var(--muted); font-size: 0.875rem; white-space: nowrap; }
+
+/* home: profiles and contact sit beside the photo, so nothing needs scrolling */
+.hero-inner.three {
+    grid-template-columns: 220px minmax(0, 1fr) 290px;
+    gap: 40px;
+    padding: 44px 24px 52px;
+}
+.hero-inner.three h1 { font-size: clamp(2.1rem, 3.6vw, 3rem); }
+.hero-inner.three .role { margin-top: 10px; }
+.hero-inner.three .affiliation { margin-top: 22px; padding-top: 16px; }
+
+.hero-links {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: var(--radius);
+    padding: 6px 20px 8px;
+}
+.hero-links h2 { margin: 12px 0 2px; color: #fff; font-size: 1.125rem; }
+.hero-links h2:not(:first-child) { margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.16); }
+.hero-links .icon-links li + li { border-top-color: rgba(255, 255, 255, 0.12); }
+.hero-links .icon-links a { gap: 12px; padding: 7px 0; color: #E6F2F1; font-size: 0.9375rem; }
+.hero-links .icon-links a:hover { color: var(--gold); }
+.hero-links .icon-links svg { color: var(--gold); }
+
+.home-grid.single { display: block; max-width: var(--wrap); }
+.home-grid.single > div { max-width: 46rem; }
+
+@media (max-width: 1080px) {
+    .hero-inner.three { grid-template-columns: 220px minmax(0, 1fr); }
+    .hero-inner.three .hero-links { grid-column: 1 / -1; }
+}
+@media (max-width: 900px) {
+    .hero-inner.three { grid-template-columns: 1fr; gap: 32px; padding: 36px 24px 44px; }
+    .hero-inner.three .portrait { width: 200px; }
+}
